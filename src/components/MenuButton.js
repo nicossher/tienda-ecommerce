@@ -1,7 +1,7 @@
 const MenuButton = () => {
   return (
     <button
-      className='navbar-toggler'
+      className='navbar-toggler border-0'
       type='button'
       data-bs-toggle='collapse'
       data-bs-target='#navbarNav'

@@ -1,0 +1,82 @@
+/* ********** Custom Properties ********** */
+:root {
+  --first-color: rgb(214, 120, 36);
+  --first-alpha-color: rgba(214, 120, 36, 0.75);
+
+  --navbar-color: rgb(27, 27, 27);
+}
+/* ********** Reset Styles ********** */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  background: #f5f5f5;
+}
+
+a {
+  color: var(--first-color);
+  transition: all 0.3s ease-out;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* ********** Bootstrap Styles ********** */
+
+.bg-dark {
+  background-color: var(--navbar-color) !important;
+}
+
+.navbar-brand img {
+  height: 4rem;
+  width: auto;
+}
+
+.navbar-dark .navbar-toggler {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28214, 120, 36, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  transition: all 0.3s ease-out;
+}
+
+.navbar-dark .navbar-toggler:hover {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  opacity: 0.75;
+}
+
+.navbar-dark .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-collapse li {
+  transition: all 0.3s ease-out;
+}
+.navbar-collapse li:hover {
+  background-color: var(--first-alpha-color);
+}
+
+.nav-item {
+  transition: all 0.3s ease-out;
+}
+
+.nav-link {
+  color: var(--first-color);
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* ********** My Styles ********** */
+
+.carrito {
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease-out;
+}
+
+.carrito:hover {
+  color: rgba(255, 255, 255, 0.75);
+}

@@ -1,13 +1,9 @@
-import { useState } from "react";
-
-function ItemListConteiner() {
-  const [count, setCount] = useState(0);
-
+function ItemListContainer(props) {
   return (
-    <div className='d-flex justify-content-center bg-warning'>
-      <button onClick={() => setCount(count + 1)}>{count}</button>
+    <div className='container'>
+      <p>{props.greeting}</p>
     </div>
   );
 }
 
-export default ItemListConteiner;
+export default ItemListContainer;
