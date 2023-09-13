@@ -25,6 +25,14 @@ a:hover {
 
 /* ********** Bootstrap Styles ********** */
 
+.active {
+  color: white;
+}
+
+.active:hover {
+  color: white !important;
+}
+
 .bg-dark {
   background-color: var(--navbar-color) !important;
 }
@@ -35,12 +43,12 @@ a:hover {
 }
 
 .navbar-dark .navbar-toggler {
-  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28214, 120, 36, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   transition: all 0.3s ease-out;
 }
 
 .navbar-dark .navbar-toggler:hover {
-  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28214, 120, 36, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   opacity: 0.75;
 }
 
@@ -61,13 +69,13 @@ a:hover {
 }
 
 .nav-link {
-  color: var(--first-color);
+  color: white;
   font-size: 1.15rem;
   font-weight: bold;
 }
 
 .nav-link:hover {
-  color: rgba(255, 255, 255, 0.75);
+  color: white;
 }
 
 /* ********** My Styles ********** */
@@ -85,5 +93,20 @@ a:hover {
 @media (min-width: 1200px) {
   .navbar-collapse li:hover {
     background-color: transparent;
+  }
+
+  .nav-link:hover {
+    color: var(--first-color);
+  }
+
+  .active {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: var(--first-color);
+    text-underline-offset: 0.75rem;
+  }
+
+  .active:hover {
+    color: var(--first-color) !important;
   }
 }
