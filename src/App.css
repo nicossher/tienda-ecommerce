@@ -89,6 +89,24 @@ a:hover {
   color: rgba(255, 255, 255, 0.75);
 }
 
+.card {
+  width: 18rem;
+}
+
+.contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-gap: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+}
+
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .navbar-collapse li:hover {
