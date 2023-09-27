@@ -1,7 +1,7 @@
-import Brand from "./Brand";
-import MenuButton from "./MenuButton";
-import CategoryItem from "./CategoryItem";
-import CartWidget from "./CartWidget";
+import Brand from "./navbar/Brand";
+import MenuButton from "./navbar/MenuButton";
+import CategoryItem from "./navbar/CategoryItem";
+import CartWidget from "../carrito/CartWidget";
 
 function NavBar() {
   return (
@@ -12,7 +12,7 @@ function NavBar() {
         <div className='collapse navbar-collapse' id='navbarNav'>
           <ul className='navbar-nav mx-auto pe-xl-5'>
             <li className='nav-item'>
-              <CategoryItem isActive={true} name='Novedades' />
+              <CategoryItem isActive={true} name='Inicio' />
             </li>
             <li className='nav-item'>
               <CategoryItem isActive={false} name='Zapatillas' />
@@ -22,9 +22,6 @@ function NavBar() {
             </li>
             <li className='nav-item'>
               <CategoryItem isActive={false} name='Shorts' />
-            </li>
-            <li className='nav-item me-xxl-5'>
-              <CategoryItem isActive={false} name='Accesorios' />
             </li>
           </ul>
           <CartWidget />

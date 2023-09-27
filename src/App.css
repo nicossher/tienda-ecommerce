@@ -37,6 +37,10 @@ a:hover {
   background-color: var(--navbar-color) !important;
 }
 
+.card-img-top {
+  box-shadow: 0 0 5px var(--first-alpha-color);
+}
+
 .navbar-brand img {
   height: 4rem;
   width: auto;
@@ -89,8 +93,12 @@ a:hover {
   color: rgba(255, 255, 255, 0.75);
 }
 
-.card {
+.card-product {
   width: 18rem;
+}
+
+.card-detail {
+  max-width: 800px !important;
 }
 
 .contenedor-productos {

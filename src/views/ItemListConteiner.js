@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import getProducts from "../asyncMock";
-import ItemList from "./ItemList";
-import LoadSpinner from "./LoadSpinner";
+import { getProducts } from "../asyncMock";
+import ItemList from "../components/itemListConteiner/ItemList";
+import LoadSpinner from "../components/loadSpinner/LoadSpinner";
 
 function ItemListContainer({ greeting }) {
   const [products, setProducts] = useState([]);
@@ -23,7 +23,11 @@ function ItemListContainer({ greeting }) {
 
   return (
     <>
-      {loading ? <LoadSpinner /> : <h1>{greeting}</h1>}
+      {loading ? (
+        <LoadSpinner />
+      ) : (
+        <h1 className='text-center mt-5'>{greeting}</h1>
+      )}
       <ItemList products={products} />
     </>
   );

@@ -48,11 +48,12 @@ const products = [
     title: "Remera Puma Essential Logo",
     price: 24.99,
     stock: 2,
-    pictureUrl: "puma_essential_remera.jpg",
+    pictureUrl:
+      "https://media.solodeportes.com.ar/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/r/e/remera-puma-essentials-logo-negra-68269046-640020845885001-1.jpg",
     category: "remera",
     description:
       "Remera Puma Essential con el logotipo de Puma en el pecho, perfecta para el uso diario.",
-  },
+  } /*,
   {
     id: 6,
     title: "Shorts Nike Dri-FIT",
@@ -199,10 +200,10 @@ const products = [
     category: "remera",
     description:
       "Remera Vans Off The Wall con el logotipo icónico para los amantes del skate.",
-  },
+  }, */,
 ];
 
-const getProducts = () => {
+export const getProducts = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(products);
@@ -210,4 +211,10 @@ const getProducts = () => {
   });
 };
 
-export default getProducts;
+export const getItem = (itemId) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(products.find((product) => product.id === itemId));
+    }, 2000);
+  });
+};
