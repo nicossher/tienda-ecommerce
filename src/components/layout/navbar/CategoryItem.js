@@ -1,12 +1,15 @@
-const CategoryItem = ({ isActive = false, name }) => {
+import { NavLink } from "react-router-dom";
+
+const CategoryItem = ({ isActive = false, route }) => {
   return (
-    <a
-      className={`nav-link fs-5 px-xxl-4 px-3 ${isActive ? "active" : null}`}
+    <NavLink
+      className={`nav-link fs-5 px-xxl-4 px-3 ${({ isActive, isPending }) =>
+        isPending ? "pending" : isActive ? "active" : ""}`}
       aria-current='page'
-      href='#'
+      to={route.path}
     >
-      {name}
-    </a>
+      {route.name}
+    </NavLink>
   );
 };
 

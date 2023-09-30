@@ -25,14 +25,6 @@ a:hover {
 
 /* ********** Bootstrap Styles ********** */
 
-.active {
-  color: white;
-}
-
-.active:hover {
-  color: white !important;
-}
-
 .bg-dark {
   background-color: var(--navbar-color) !important;
 }
@@ -84,6 +76,14 @@ a:hover {
 
 /* ********** My Styles ********** */
 
+.active {
+  color: white;
+}
+
+.active:hover {
+  color: white !important;
+}
+
 .carrito {
   color: rgb(255, 255, 255);
   transition: all 0.3s ease-out;
@@ -110,9 +110,21 @@ a:hover {
 }
 
 .spinner {
-  position: absolute;
-  top: 50%;
-  left: 45%;
+  min-height: 65vh;
+  width: 50%;
+  align-items: center;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+Footer {
+  width: 100%;
+}
+
+.ItemDetailContainer {
+  min-height: 60vh;
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
@@ -134,5 +146,10 @@ a:hover {
 
   .active:hover {
     color: var(--first-color) !important;
+  }
+
+  .pending {
+    color: white;
+    text-decoration: none;
   }
 }

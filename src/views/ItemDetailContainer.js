@@ -1,24 +1,28 @@
-import { useState, useEffect } from "react";
-import { getItem } from "../asyncMock";
 import ItemDetail from "../components/itemDetailConteiner/ItemDetail";
+import LoadSpinner from "../components/loadSpinner/LoadSpinner";
+import { useParams } from "react-router-dom";
+import { useItemById } from "../hooks/useItemById";
 
-function ItemDetailContainer({ idSelected = 1 }) {
-  const [product, setProduct] = useState(null);
+function ItemDetailContainer() {
+  const { itemId } = useParams();
+  const { product, loading } = useItemById(itemId);
 
-  useEffect(() => {
-    getItem(idSelected)
-      .then((response) => {
-        setProduct(response);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
+  if (loading) {
+    return <LoadSpinner />;
+  }
+
+  if (!product) {
+    return (
+      <h1 className='d-flex container m-5'>
+        ERROR 404! "PRODUCTO NO ENCONTRADO"
+      </h1>
+    );
+  }
 
   return (
-    <>
+    <div className='ItemDetailContainer'>
       <ItemDetail {...product} />
-    </>
+    </div>
   );
 }
 
