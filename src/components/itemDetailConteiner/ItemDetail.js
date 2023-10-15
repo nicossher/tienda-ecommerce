@@ -34,7 +34,7 @@ const ItemDetail = ({
                 Stock disponible: {stock}
               </small>
             </p>
-            <BtnCarrito stock={stock} />
+            <BtnCarrito stock={stock} title={title} price={price} id={id} />
           </div>
         </div>
       </div>

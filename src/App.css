@@ -10,7 +10,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Lato", sans-serif;
   background: #f5f5f5;
 }
 
@@ -84,6 +84,24 @@ a:hover {
   color: white !important;
 }
 
+.btn-cleanCart {
+  background-color: rgb(242, 56, 56);
+  padding: 10px 20px 10px 20px;
+  border-radius: 50px;
+}
+
+.btn-cleanCart:hover {
+  background-color: rgba(242, 56, 56, 0.9);
+}
+
+.btn-removeItem {
+  background-color: transparent;
+  color: rgb(242, 56, 56);
+  border: none;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
 .carrito {
   color: rgb(255, 255, 255);
   transition: all 0.3s ease-out;
@@ -101,12 +119,29 @@ a:hover {
   max-width: 800px !important;
 }
 
+.cart-item {
+  background-color: #ffcc99;
+  border-radius: 15px;
+}
+
 .contenedor-productos {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   grid-gap: 15px;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.linkButton {
+  background-color: var(--first-color);
+  margin: 30px;
+  border: none;
+  border-radius: 50;
+  font-size: 20px;
+}
+
+.linkButton:hover {
+  background-color: rgba(16, 170, 65, 0.9);
 }
 
 .spinner {

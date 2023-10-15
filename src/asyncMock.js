@@ -2,7 +2,7 @@ const products = [
   {
     id: 1,
     title: "Camiseta Nike NBA Classic Brokling Nets",
-    price: 49.99,
+    price: 49,
     stock: 3,
     pictureUrl:
       "https://images.footballfanatics.com/brooklyn-nets/brooklyn-nets-nike-classic-edition-swingman-jersey-white-patty-mills-unisex_ss4_p-13364122+pv-1+u-117qe2jytvisr9z5dlsf+v-106b4359b6ab47a98e8a4b7c395a6459.jpg?_hv=2&w=600",
@@ -13,7 +13,7 @@ const products = [
   {
     id: 2,
     title: "Zapatillas Adidas Pro Bounce",
-    price: 129.99,
+    price: 129,
     stock: 0,
     pictureUrl:
       "https://www.tradeinn.com/f/13720/137209681/adidas-zapatillas-baloncesto-pro-bounce.jpg",
@@ -24,7 +24,7 @@ const products = [
   {
     id: 3,
     title: "Shorts Under Armour Court",
-    price: 34.99,
+    price: 34,
     stock: 2,
     pictureUrl:
       "https://media.solodeportes.com.ar/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/s/h/short-de-basquet-under-armour-10-baseline-court-negro-700021351285002-1.jpg",
@@ -35,7 +35,7 @@ const products = [
   {
     id: 4,
     title: "Camiseta Nike LeBron James",
-    price: 59.99,
+    price: 59,
     stock: 2,
     pictureUrl:
       "https://www.opensports.com.ar/media/catalog/product/cache/6f91ed87555a15260d810a895c116072/C/W/CW3669-738_0_7.jpg",
@@ -46,10 +46,10 @@ const products = [
   {
     id: 5,
     title: "Zapatillas Jordan 1 Retro",
-    price: 179.99,
+    price: 179,
     stock: 1,
     pictureUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROt3ReumYxSo7MqtPgW0ffnXOgrkfutQK8WhiIlWaqNxXn99xm_cDKmu2sxizwBqNJiNs&usqp=CAU",
+      "https://nikearprod.vtexassets.com/arquivos/ids/702541/555088_161_A_PREM.jpg?v=638233926631770000",
     category: "Zapatillas",
     descripcion:
       "Las icónicas zapatillas Air Jordan 1 Retro, un clásico atemporal con un diseño de alto rendimiento y estilo inigualable.",
@@ -57,7 +57,7 @@ const products = [
   {
     id: 6,
     title: "Shorts Nike Elite",
-    price: 44.99,
+    price: 44,
     stock: 3,
     pictureUrl: "https://i.ebayimg.com/images/g/D~wAAOSwrXhf5nvh/s-l1600.jpg",
     category: "Shorts",
@@ -67,7 +67,7 @@ const products = [
   {
     id: 7,
     title: "Camiseta Adidas NBA All-Star",
-    price: 69.99,
+    price: 69,
     stock: 2,
     pictureUrl:
       "https://24segons.es/157340-large_default/camiseta-larry-bird-all-star-east-1985-white-authentic.jpg",
@@ -77,7 +77,7 @@ const products = [
   {
     id: 8,
     title: "Zapatillas Puma Clyde Court",
-    price: 119.99,
+    price: 119,
     stock: 1,
     pictureUrl:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVoCm9ScukaeeVYyLzWYd305cohLakEUOtCw&usqp=CAU",
@@ -88,7 +88,7 @@ const products = [
   {
     id: 9,
     title: "Shorts Reebok Cross-Over",
-    price: 29.99,
+    price: 29,
     stock: 5,
     pictureUrl:
       "https://media.purehockey.com/images/q_auto,f_auto,fl_lossy,c_lpad,b_auto,w_400,h_400/products/39487/11/131375/bauer-crossover-training-shorts-youth",
@@ -99,7 +99,7 @@ const products = [
   {
     id: 10,
     title: "Camiseta Under Armour Street",
-    price: 54.99,
+    price: 54,
     stock: 0,
     pictureUrl:
       "https://i.ebayimg.com/thumbs/images/g/FVsAAOSwXcRlCguq/s-l640.jpg",
@@ -110,7 +110,7 @@ const products = [
   {
     id: 11,
     title: "Zapatillas Converse Chuck Taylor",
-    price: 79.99,
+    price: 79,
     stock: 5,
     pictureUrl:
       "https://s3.sa-east-1.amazonaws.com/www.vaypol.com.ar/variants/rkgvmlezrset0mmz1v5hmnumlsv3/c77c2a06864ac9aca38dc5bd9371de015471edcdbf322dfb14411689bf968ae5",
@@ -121,7 +121,7 @@ const products = [
   {
     id: 12,
     title: "Shorts Nike Dunk Style",
-    price: 39.99,
+    price: 39,
     stock: 3,
     pictureUrl:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6dxgtHHWFmnmwX78CVlaN6v3GSz9PQGLo_kRsB6jBhVmwz91XES8BKqTDZezSnrmbHSo&usqp=CAUg",
@@ -132,7 +132,7 @@ const products = [
   {
     id: 13,
     title: "Camiseta Adidas Harden MVP",
-    price: 64.99,
+    price: 64,
     stock: 2,
     pictureUrl:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPHNQolBXgRluv1dRhD_ad4wEco4EWhaKahA&usqp=CAU",
@@ -143,7 +143,7 @@ const products = [
   {
     id: 14,
     title: "Zapatillas Under Armour Curry 8",
-    price: 139.99,
+    price: 139,
     stock: 0,
     pictureUrl:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSblYhIIn6WBlH3i37jilrRbAXKM6gEd3xBFIjXX3ZbPM7wqv1DBd2WsKQMCi4B-5z17O8&usqp=CAU",
@@ -154,7 +154,7 @@ const products = [
   {
     id: 15,
     title: "Shorts Adidas Streetstyle",
-    price: 49.99,
+    price: 49,
     stock: 4,
     pictureUrl:
       "https://m.media-amazon.com/images/I/41ycC481UuL._AC_SY350_.jpg",
@@ -165,7 +165,7 @@ const products = [
   {
     id: 16,
     title: "Camiseta Puma Retro",
-    price: 45.99,
+    price: 45,
     stock: 3,
     pictureUrl:
       "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_706,h_706/global/539246/01/fnd/ARG/fmt/png",
@@ -176,7 +176,7 @@ const products = [
   {
     id: 17,
     title: "Zapatillas Reebok Classic",
-    price: 69.99,
+    price: 69,
     stock: 2,
     pictureUrl:
       "https://reebokarg.vtexassets.com/arquivos/ids/177216-800-800?v=638213802794600000&width=800&height=800&aspect=true",
@@ -187,7 +187,7 @@ const products = [
   {
     id: 18,
     title: "Shorts Jordan Flight",
-    price: 54.99,
+    price: 54,
     stock: 1,
     pictureUrl:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw6QRvOspe7GlHtAgjvFgRx5GVaYsqHx1r2r8sooUkiiYmEVCObs0B4bEjKHGZ-7zrZOM&usqp=CAU",
@@ -198,7 +198,7 @@ const products = [
   {
     id: 19,
     title: "Camiseta Nike Team USA",
-    price: 79.99,
+    price: 79,
     stock: 5,
     pictureUrl:
       "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f735d029-2fd9-4d19-be00-70ddaab639f9/jersey-de-b%C3%A1squetbol-usa-road-authentic-P7GQ75.png",
@@ -209,7 +209,7 @@ const products = [
   {
     id: 20,
     title: "Zapatillas New Balance Hoops",
-    price: 89.99,
+    price: 89,
     stock: 3,
     pictureUrl: "https://trcmnbco.s3.amazonaws.com/BB2WYFS3_1.jpg",
     category: "Zapatillas",

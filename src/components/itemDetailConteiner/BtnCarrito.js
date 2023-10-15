@@ -1,7 +1,10 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { CartContext } from "../../context/CartContext";
 
-const BtnCarrito = ({ stock }) => {
+const BtnCarrito = ({ stock, id, title, price }) => {
   const [count, setCount] = useState(0);
+
+  const { addItem } = useContext(CartContext);
 
   const decrement = () => {
     if (count > 0) {
@@ -15,8 +18,14 @@ const BtnCarrito = ({ stock }) => {
     }
   };
 
-  const onAdd = () => {
-    console.log(count);
+  const handleOnAdd = () => {
+    const item = {
+      id,
+      title,
+      price,
+    };
+
+    addItem(item, count);
   };
 
   return (
@@ -40,7 +49,7 @@ const BtnCarrito = ({ stock }) => {
       </div>
       <button
         className='btn btn-primary mt-3 container text-center'
-        onClick={onAdd}
+        onClick={handleOnAdd}
         disabled={!count}
       >
         AGREGAR AL CARRITO
