@@ -10,7 +10,9 @@ export const useItemById = (itemId) => {
     const biciRef = doc(db, "items", itemId);
     getDoc(biciRef)
       .then((snapshot) => {
-        setProduct({ id: snapshot.id, ...snapshot.data() });
+        if (snapshot.data()) {
+          setProduct({ id: snapshot.id, ...snapshot.data() });
+        }
       })
       .finally(() => {
         setLoading(false);

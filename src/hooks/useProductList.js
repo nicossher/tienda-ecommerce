@@ -10,6 +10,7 @@ export const useProductList = () => {
   const { categoryId } = useParams();
 
   useEffect(() => {
+    setProducts([]);
     setLoading(true);
 
     const itemsCollection = categoryId

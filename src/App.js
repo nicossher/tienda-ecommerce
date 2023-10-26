@@ -5,6 +5,7 @@ import ItemDetailContainer from "./views/ItemDetailContainer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CartProvider } from "./context/CartContext";
 import CartView from "./views/cartView";
+import CheckoutView from "./views/checkout";
 
 function App() {
   return (
@@ -29,12 +30,17 @@ function App() {
                 element={<ItemDetailContainer />}
               />
               <Route exact path='/cart' element={<CartView />} />
+              <Route exact path='/checkout' element={<CheckoutView />} />
               <Route
-                exact
-                path='/checkout'
-                element={<h1>GRACIAS POR SU COMPRA!</h1>}
+                path='*'
+                element={
+                  <div className='errorDiv'>
+                    <h1 className='d-flex container m-5'>
+                      ERROR: NO EXISTE LA RUTA
+                    </h1>
+                  </div>
+                }
               />
-              <Route path='*' element={<h1>NO EXISTE LA RUTA</h1>} />
             </Routes>
           </Layout>
         </CartProvider>

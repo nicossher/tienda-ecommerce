@@ -8,14 +8,16 @@ function ItemDetailContainer() {
   const { product, loading } = useItemById(itemId);
 
   if (loading) {
-    return <LoadSpinner />;
+    return <LoadSpinner text='Loading...' />;
   }
 
   if (!product) {
     return (
-      <h1 className='d-flex container m-5'>
-        ERROR 404! "PRODUCTO NO ENCONTRADO"
-      </h1>
+      <div className='errorDiv'>
+        <h1 className='d-flex container m-5'>
+          ERROR 404! "PRODUCTO NO ENCONTRADO"
+        </h1>
+      </div>
     );
   }
 

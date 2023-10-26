@@ -8,7 +8,7 @@ function ItemListContainer({ greeting }) {
   return (
     <div>
       {loading ? (
-        <LoadSpinner />
+        <LoadSpinner text='Loading...' />
       ) : (
         <h1 className='text-center mt-5'>{greeting}</h1>
       )}

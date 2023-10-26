@@ -9,8 +9,6 @@ export const CartProvider = ({ children }) => {
   const [totalPrice, setTotalPrice] = useState(0);
   const [totalQuantity, setTotalQuantity] = useState(0);
 
-  console.log(cart);
-
   const isInCart = (itemId) => {
     return cart.some((product) => product.id === itemId);
   };

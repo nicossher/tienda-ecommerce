@@ -1,9 +1,9 @@
 import Spinner from "react-bootstrap/Spinner";
 
-function LoadSpinner() {
+function LoadSpinner({ text }) {
   return (
     <div className='d-flex spinner justify-content-center m-auto'>
-      <h1>Loading... </h1>
+      <h1>{text} </h1>
       <Spinner animation='border' />;
     </div>
   );
