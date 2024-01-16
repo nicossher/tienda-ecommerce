@@ -3,10 +3,10 @@
 Proyecto de una tienda ecommerce para el curso de react js de coderhouse
 
 ### Funcionalidades
-Catálogo de productos con imágenes y descripciones.
-Carrito de compras para agregar y gestionar productos.
-Diseño receptivo gracias a Bootstrap.
-Actualizacion de base de datos a la hora de la compra
+- Catálogo de productos con imágenes y descripciones.
+- Carrito de compras para agregar y gestionar productos.
+- Diseño receptivo gracias a Bootstrap.
+- Actualizacion de base de datos a la hora de la compra
 
 ### Tecnologias:
 - Javascript
