@@ -19,6 +19,6 @@ Proyecto de una tienda ecommerce para el curso de react js de coderhouse
 - cd tienda-ecommerce
 - npm install
 - npm start
-Abre tu navegador y ve a http://localhost:3000 para explorar la tienda.
+- Abre tu navegador y ve a http://localhost:3000 para explorar la tienda.
 
 ###### Proyecto creado con create-react-app
