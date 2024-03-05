@@ -1,24 +1,24 @@
-# Tienda E-Commerce con React y Bootstrap
+# E-Commerce Store with React and Bootstrap
 
-Proyecto de una tienda ecommerce para el curso de react js de coderhouse
+An e-commerce store project for the React JS course at Coderhouse
 
-### Funcionalidades
-- Catálogo de productos con imágenes y descripciones.
-- Carrito de compras para agregar y gestionar productos.
-- Diseño receptivo gracias a Bootstrap.
-- Actualizacion de base de datos a la hora de la compra
+### Features
+- Product catalog with images and descriptions.
+- Shopping cart to add and manage products.
+- Responsive design by Bootstrap.
+- Database updates at the time of purchase
 
-### Tecnologias:
+### Technologies:
 - Javascript
 - React js
 - Boostrap
 - Firebase / Firestore
 
-### Como Usar:
+### How to Use:
 - git clone https://github.com/nicossher/tienda-ecommerce
 - cd tienda-ecommerce
 - npm install
 - npm start
-- Abre tu navegador y ve a http://localhost:3000 para explorar la tienda.
+- Open your browser and go to http://localhost:3000 to explore the store.
 
-###### Proyecto creado con create-react-app
+###### Project created with create-react-app
