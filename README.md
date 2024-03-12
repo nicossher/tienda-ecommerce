@@ -11,7 +11,7 @@ An e-commerce store project for the React JS course at Coderhouse
 ### Technologies:
 - Javascript
 - React js
-- Boostrap
+- Bootstrap
 - Firebase / Firestore
 
 ### How to Use:
